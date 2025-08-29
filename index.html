@@ -5,10 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body><h1>hello</h1>
+<style>
+    table, th, td { 
+        border: 1px solid black;
+
+    }
+    td{
+        background-color: rgba(186, 173, 230, 0.33);
+    }
+    th,td{
+        border: 1px solid   rgb(0, 0, 0);
+        border-radius: 10px;
+        border-style: dashed;
+        text-align: center;
+        padding: 50px;
+        border-spacing : 20px;
+
+    }
+    td:nth-child(even){
+        background-color: rgba(186, 230, 173, 0.33);
+    }
+    td:nth-child(3){
+        background-color: rgba(0, 0, 0, 0.33);
+    }
+    td:nth-child(1){
+        background-color: rgba(145, 17, 17, 0.33);
+    }
+    th:nth-child(1){
+        background-color: rgba(32, 12, 96, 0.33);
+    } 
+   td:hover {background-color: yellow;}
+</style>
+
+<body>
+    <h1> 
+
     
-<h2>my name is this</h2> 
-<h3>hey</h3>
+    <table style="width:100;;;"> 
+        <caption>student details</caption>
+    <tr>
+        
+        <th colspan="2">name</th>
+        <th>roll no.</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>abc</td>
+        <td>123</td>
+    </tr>
+    </table>
+    
 
 </body>
 </html>
