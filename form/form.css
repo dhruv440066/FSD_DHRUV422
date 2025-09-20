@@ -1,0 +1,62 @@
+/* General styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #3398a5, #f1f8e9);
+  margin: 0;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container */
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 700px;
+  width: 100%;
+}
+
+/* Each row */
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Paragraph style */
+.item p {
+  font-size: 18px;
+  color: #333;
+  margin: 0;
+  font-weight: 500;
+}
+
+/* Image style */
+.item img {
+  width: 120px;
+  height: 120px;
+  border-radius: 15px;
+  border: 3px solid #4CAF50;
+  object-fit: cover;
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+/* Hover effect on image */
+.item img:hover {
+  transform: scale(1.15) rotate(3deg);
+  filter: brightness(1.1) saturate(1.2);
+  border-color: #2e7d32;
+}
